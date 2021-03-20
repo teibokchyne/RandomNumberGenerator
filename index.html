@@ -6,6 +6,69 @@
 <title>Random Number Generator</title>
 </head>
 <body>
-<h1>Hello World</h1>
+<h1>Quant Practice</h1>
+<h3>Multiply the following numbers</h3><br/>
+<button class="button" onclick="generate()">Generate two numbers</button>
+<p class="input-style" id="num1">A</p>
+<p class="input-style" id="num2">B</p><br/>
+<button class="button" onclick="multiply()">Multiply</button>
+<p class="input-style" id="num3">A*B</p><br/>
+<br/>
+<br/>
+<br/>
+<h3>Square the following number</h3><br/>
+<button class="button" onclick="generateSquare()">Generate the number</button>
+<p class="input-style" id="num4">A</p>
+<button class="button" onclick="squareOfNumber()">Square</button>
+<p class="input-style" id="num5">A*A</p><br/>
+<br/>
+<br/>
+<br/>
+<h3>Find the cube of the following number</h3><br/>
+<button class="button" onclick="generateCube()">Generate the number</button>
+<p class="input-style" id="num6">A</p>
+<button class="button" onclick="cubeOfNumber()">Cube</button>
+<p class="input-style" id="num7">A*A*A</p><br/>
+<script type="text/javascript">
+	var a,b;
+	function generate(){
+		a=0;
+		b=0;
+		while(a<12||a==20||a==30){
+			a= Math.round((Math.random()*100)%30);
+		}
+		while(b==0){
+			b= Math.round((Math.random()*100)%10);
+		}
+		document.getElementById('num1').innerHTML=a;
+		document.getElementById('num2').innerHTML=b;
+		document.getElementById('num3').innerHTML="A*B";
+	}
+	function multiply(){
+		document.getElementById('num3').innerHTML=a*b;
+	}
+	var c;
+	function generateSquare(){
+		c=0;
+		while(c<12||c==20||c==30){
+			c= Math.round((Math.random()*100)%40);
+		}
+		document.getElementById('num4').innerHTML=c;
+		document.getElementById('num5').innerHTML="A*A";	
+	}
+	function squareOfNumber(){
+		document.getElementById('num5').innerHTML=c*c;	
+	}
+	var d;
+	function generateCube(){
+		d=0;
+		d= Math.round((Math.random()*100)%30);
+		document.getElementById('num6').innerHTML=d;
+		document.getElementById('num7').innerHTML="A*A*A";	
+	}
+	function cubeOfNumber(){
+		document.getElementById('num7').innerHTML=d*d*d;	
+	}
+</script>
 </body>
 </html>
