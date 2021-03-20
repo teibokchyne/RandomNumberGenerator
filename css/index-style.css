@@ -128,9 +128,11 @@ table th {
 
 
 .input-style {
-  width: 90%;
+  width: 50%;
   padding: 12px 20px;
-  margin-left:5%;
+  text-align: center;
+  margin-left:25%;
+  margin-right:25%;
   box-sizing: border-box;
   border: none;
   background-color:white;
@@ -152,12 +154,12 @@ input[type=text]:focus, textarea:focus,button:focus{
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin: 4px 2px;
+  margin-left:25%;
+  margin-right:25%;
   transition-duration: 0.4s;
   cursor: pointer;
-  margin-left:5%;
   font-size: 16px;
-  width: 90%;
+  width: 50%;
    border-radius: 25px;
 }
 
